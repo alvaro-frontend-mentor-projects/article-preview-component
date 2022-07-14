@@ -103,6 +103,60 @@ p{
     font-size: 13px;
 
 }
-.date{
 
-}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 390px) {
+    .container {
+        max-width: 350px;
+        max-height: 600px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .left-container{
+        width: 100%;
+        height: 45%;
+        background-image: url('../images/drawers.jpg');
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .right-container{
+        max-width: 350px;
+        width: auto;
+        height: 55%;
+        background-color: white;
+        border-radius:  0 0 10px 10px ;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    h2 {
+        color:var(--very-dark-grayish-blue);
+        font-size: 1rem;
+    }
+    
+    p{
+        color: var(--grayish-blue);
+        font-size: 13px;
+        line-height: 1.5;
+        
+    }
+    
+    .user-box{
+        display: flex;
+        flex-direction: row; 
+        
+        align-items: center;
+        gap: 1rem;
+        
+     }
+  }
