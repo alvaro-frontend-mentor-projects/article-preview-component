@@ -104,6 +104,10 @@ p{
 
 }
 
+.third-container-mobile{
+    display: none;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 390px) {
@@ -119,7 +123,7 @@ p{
 
     .left-container{
         width: 100%;
-        height: 45%;
+        height: 40%;
         background-image: url('../images/drawers.jpg');
         background-size: cover;
         border-radius: 10px 10px 0 0;
@@ -128,9 +132,9 @@ p{
     .right-container{
         max-width: 350px;
         width: auto;
-        height: 55%;
+        height: 50%;
         background-color: white;
-        border-radius:  0 0 10px 10px ;
+        border-radius:  0 0 0 0  ;
         padding: 35px;
         display: flex;
         flex-direction: column;
@@ -154,9 +158,43 @@ p{
     .user-box{
         display: flex;
         flex-direction: row; 
-        
         align-items: center;
         gap: 1rem;
+        /* hide this whole div when mobile */
+        display: none;
         
-     }
+    }
+
+    .third-container-mobile{
+        height: 10%;
+        display: block;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--very-dark-grayish-blue);
+        border-radius:  0 0 10px 10px ;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 35px 0 35px;
+        gap: 1rem;
+        letter-spacing: .3rem;
+        
+
+    }
+
+    
+
+    .share-box {
+        height: 30px;
+        width: 30px;
+        background-color: var(--grayish-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin-left: auto;
+        fill:white;
+        
+    }
+
+    
   }
