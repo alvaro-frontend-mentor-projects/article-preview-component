@@ -165,8 +165,8 @@ p{
 
 @media only screen and (max-width: 390px) {
     .container {
-        max-width: 325px;
-        max-height: 600px;
+        max-width: 335px;
+        max-height: 550px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -176,7 +176,7 @@ p{
 
     .left-container{
         width: 100%;
-        height: 46%;
+        height: 45%;
         background-image: url('../images/drawers.jpg');
         background-size: cover;
         border-radius: 10px 10px 0 0;
@@ -185,26 +185,26 @@ p{
     .right-container{
         max-width: 350px;
         width: auto;
-        height: 42%;
+        height: 55%;
         background-color: white;
-        border-radius:  0 0 0 0  ;
-        padding: 35px;
+        border-radius:  0 0 10px 10px  ;
+        padding: 33px 30px 20px 30px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 2rem;
     }
 
     h2 {
         color:var(--very-dark-grayish-blue);
-        font-size: 1.1rem;
+        font-size: 17px;
         font-weight: 700;
+        line-height: 1.7;
     }
     
     p{
         color: var(--grayish-blue);
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.7;
       
         
@@ -215,15 +215,13 @@ p{
         flex-direction: row; 
         align-items: center;
         gap: 1rem;
-        /* hide this whole div when mobile */
-        display: none;
+        
         
     }
 
     .third-container-mobile{
         height: 12%;
-        display: block;
-        display: flex;
+        display: none;
         flex-direction: row;
         background-color: var(--very-dark-grayish-blue);
         border-radius:  0 0 10px 10px ;
