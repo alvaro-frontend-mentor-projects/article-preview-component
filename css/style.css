@@ -62,6 +62,55 @@ p{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    position: relative;
+}
+
+.share-container{
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    display: none;
+    flex-direction: row;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    gap: 1rem;
+    letter-spacing: 3px;
+    left: 290px;
+    top: 140px;
+}
+
+.share-container-active{
+    position: absolute;
+    background-color: var(--very-dark-grayish-blue);
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    gap: 1rem;
+    letter-spacing: 3px;
+    left: 290px;
+    top: 140px;
+}
+
+.share-container-arrow{
+    display: none;
+    content: '';
+    border-color: var(--very-dark-grayish-blue) transparent;
+    border-width: 12px 12px 0 12px;
+    border-style: solid;
+    position: absolute;
+    top: 190px;
+    left: 380px;
+}
+
+.share-container-arrow-active{
+    display: block;
+    content: '';
+    border-color: var(--very-dark-grayish-blue) transparent;
+    border-width: 12px 12px 0 12px;
+    border-style: solid;
+    position: absolute;
+    top: 190px;
+    left: 380px;
 }
 
 .user-box{
